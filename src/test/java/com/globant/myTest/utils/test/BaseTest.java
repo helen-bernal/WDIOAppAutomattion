@@ -1,4 +1,5 @@
 package com.globant.myTest.utils.test;
+import com.globant.myTest.screens.*;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
@@ -19,6 +20,7 @@ public class BaseTest {
     public void enviromentSetuo(){
         loadProperties();
         UiAutomator2Options capabilities=new UiAutomator2Options();
+        SetUpCapabilities(capabilities);
         try{
             driver=new AndroidDriver(new URL("http://127.0.0.1:4723"),capabilities);
 
@@ -46,6 +48,18 @@ public class BaseTest {
         capabilities.setAppPackage(getCapability("appPackage"));
 
     }
+    public HomeScreen homeScreen(){
+        return new HomeScreen(driver);
+    }
+    public WebViewScreen webViewScreen(){
+        return new WebViewScreen(driver);
+    }
+    public LoginScreen loginScreen(){
+        return new LoginScreen(driver);
+    }
+    public FormsScreen formsScreen(){return new FormsScreen(driver);}
+    public SwipeScreen swipeScreen(){return new SwipeScreen(driver);}
+    public DragScreen dragScreen(){return new DragScreen(driver);}
     @AfterTest
     public static void downServer(){
         driver.quit();

@@ -29,13 +29,6 @@
             <artifactId>java-client</artifactId>
             <version>9.3.0</version>
         </dependency>
-
-        <!-- Selenium Dependency (Required for Appium) -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.26.0</version>
-        </dependency>
     </dependencies>
 
     <build>
