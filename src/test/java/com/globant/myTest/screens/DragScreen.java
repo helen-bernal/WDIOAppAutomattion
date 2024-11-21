@@ -13,7 +13,7 @@ public class DragScreen extends BaseScreen {
     @AndroidFindBy(uiAutomator =uiAutomator_DragandDrop)
     private WebElement DragandDropText;
     public Boolean isDragandDropTextPresent(){
-        return isELementDisplayed(DragandDropText);
+        return isElementDisplayed(DragandDropText);
     }
     private static final String uiAutomator_DragButton="new UiSelector().description(\"Drag\")";
     @AndroidFindBy(uiAutomator=uiAutomator_DragButton)

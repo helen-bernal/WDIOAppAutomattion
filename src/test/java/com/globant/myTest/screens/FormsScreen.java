@@ -13,7 +13,7 @@ public class FormsScreen extends BaseScreen {
     @AndroidFindBy(uiAutomator =uiAutomator_FormComponents)
     private WebElement FormComponentsText;
     public Boolean isFormComponentsTextPresent(){
-        return isELementDisplayed(FormComponentsText);
+        return isElementDisplayed(FormComponentsText);
     }
     private static final String uiAutomator_FormButton="new UiSelector().description(\"Forms\")";
     @AndroidFindBy(uiAutomator=uiAutomator_FormButton)

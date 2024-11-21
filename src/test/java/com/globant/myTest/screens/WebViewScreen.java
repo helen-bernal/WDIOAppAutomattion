@@ -14,7 +14,7 @@ public class WebViewScreen extends BaseScreen {
     @AndroidFindBy(uiAutomator =uiAutomator_loading)
     private WebElement LoadingText;
     public Boolean isLoadingTextPresent(){
-        return isELementDisplayed(LoadingText);
+        return isElementDisplayed(LoadingText);
     }
     public WebElement getLoadingText() {
         return LoadingText;
@@ -23,7 +23,7 @@ public class WebViewScreen extends BaseScreen {
     @AndroidFindBy(uiAutomator =uiAutomator_Nextgen)
     private WebElement NextgenText;
     public Boolean isNextgenTextPresent(){
-        return isELementDisplayed(NextgenText);
+        return isElementDisplayed(NextgenText);
     }
     private static final String uiAutomator_WebView="new UiSelector().description(\"Webview\")";
     @AndroidFindBy(uiAutomator=uiAutomator_WebView)

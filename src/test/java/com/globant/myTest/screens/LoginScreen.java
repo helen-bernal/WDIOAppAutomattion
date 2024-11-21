@@ -17,7 +17,7 @@ public class LoginScreen extends BaseScreen {
     private WebElement LoginSingUpText;
 
     public Boolean isLoginSingUpTextPresent() {
-        return isELementDisplayed(LoginSingUpText);
+        return isElementDisplayed(LoginSingUpText);
     }
 
     private static final String uiAutomator_LoginButton = "new UiSelector().description(\"Login\")";

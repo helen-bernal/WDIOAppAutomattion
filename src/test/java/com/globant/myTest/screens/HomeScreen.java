@@ -15,7 +15,7 @@ public class HomeScreen extends BaseScreen {
         this.driver = driver;
     }
     public Boolean isWebDriverIOTextPresent(){
-        return isELementDisplayed(WebDriverIOText);
+        return isElementDisplayed(WebDriverIOText);
     }
     private static final String uiAutomator_WebButton="new UiSelector().description(\"Home\")";
     @AndroidFindBy(uiAutomator=uiAutomator_WebButton)
