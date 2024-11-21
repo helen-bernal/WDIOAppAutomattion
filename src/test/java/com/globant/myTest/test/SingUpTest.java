@@ -14,6 +14,6 @@ public class SingUpTest extends BaseTest {
         Assert.assertTrue(loginScreen.isLoginSingUpTextPresent());
         loginScreen.clickSingUpOption();
         loginScreen.registerWithRandomData();
-
+        loginScreen.isSuccessMessageDisplayed();
     }
 }

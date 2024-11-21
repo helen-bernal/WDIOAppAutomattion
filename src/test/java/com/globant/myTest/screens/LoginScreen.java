@@ -53,7 +53,7 @@ public class LoginScreen extends BaseScreen {
     public void clickSignUpButton() {
         SignUpButton.click();
     }
-    private static final String uiAutomator_SuccessSignUo="";
+    private static final String uiAutomator_SuccessSignUo="new UiSelector().className(\"android.widget.FrameLayout\").instance(0)";
     @AndroidFindBy(uiAutomator=uiAutomator_SuccessSignUo)
     private WebElement successText;
     public boolean isSuccessMessageDisplayed() {
