@@ -7,7 +7,8 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebElement;
 
 public class HomeScreen extends BaseScreen {
-    @AndroidFindBy(uiAutomator = ".text(\"WEBDRIVER\")")
+    private static final String uiAutomator_WebText="new UiSelector().text(\"WEBDRIVER\")";
+    @AndroidFindBy(uiAutomator = uiAutomator_WebText)
     private WebElement WebDriverIOText;
     public HomeScreen(AndroidDriver driver) {
         super(driver);
@@ -16,7 +17,8 @@ public class HomeScreen extends BaseScreen {
     public Boolean isWebDriverIOTextPresent(){
         return isELementDisplayed(WebDriverIOText);
     }
-    @AndroidFindBy(uiAutomator="new UiSelector().description(\"Home\")")
+    private static final String uiAutomator_WebButton="new UiSelector().description(\"Home\")";
+    @AndroidFindBy(uiAutomator=uiAutomator_WebButton)
     private WebElement HomeButton;
     public void clickHomeButton() {
         clickElement(HomeButton);
